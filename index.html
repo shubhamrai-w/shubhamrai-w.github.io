@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shubham Rai | Data & Business Analyst</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Animated particle background canvas -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">SR<span class="dot">.</span></div>
+    <div class="nav-center">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about"><i class="fa-solid fa-house"></i><span></span>About</span></a></li>
+        <li><a href="#skills"><i class="fa-solid fa-code"></i><span>Skills</span></a></li>
+        <li><a href="#experience"><i class="fa-solid fa-terminal"></i><span>Experience</span></a></li>
+        <li><a href="#projects"><i class="fa-solid fa-diagram-project"></i><span>Projects</span></a></li>
+        <li><a href="#education"><i class="fa-solid fa-graduation-cap"></i><span>Education</span></a></li>
+      </ul>
+    </div>
+    <a class="nav-linkedin" href="https://www.linkedin.com/in/shubham-rai-a269ba36a" target="_blank" rel="noopener">
+      <i class="fa-brands fa-linkedin"></i>
+      <span>LinkedIn Profile</span>
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="about">
+    <div class="hero-content">
+      <p class="hero-greeting">Hi, I am</p>
+      <h1 class="hero-name">Shubham Rai</h1>
+      <h2 class="hero-title">
+        I am a <span class="typed-text" id="typedText"></span><span class="cursor">|</span>
+      </h2>
+      <p class="hero-desc">
+        Passionate about turning raw data into actionable insights. I specialize in
+        SQL-driven analysis, Python-powered automation, and building dashboards that
+        help businesses make smarter decisions — faster.
+      </p>
+      <div class="hero-btns">
+        <a href="resume.pdf" target="_blank" class="btn btn-cv">
+          <i class="fa-solid fa-file-lines"></i> Check Resume
+        </a>
+      </div>
+    </div>
+
+    <!-- HERO IMAGE — clean circular photo, no animation -->
+    <div class="hero-visual">
+      <div class="hero-img-circle">
+        <img src="profilr pic.jpeg" alt="Shubham Rai" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <p class="section-sub">Tools and technologies I work with to deliver data-driven solutions.</p>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3><i class="fa-solid fa-database"></i> Data &amp; Databases</h3>
+          <div class="skill-items">
+            <div class="skill-item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="SQL"/><span>SQL</span></div>
+            <div class="skill-item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="MySQL"/><span>MySQL</span></div>
+            <div class="skill-item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" alt="PostgreSQL"/><span>PostgreSQL</span></div>
+            <div class="skill-item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" alt="MS SQL"/><span>MS SQL Server</span></div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fa-brands fa-python"></i> Programming &amp; Analysis</h3>
+          <div class="skill-items">
+            <div class="skill-item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python"/><span>Python</span></div>
+            <div class="skill-item"><img src="https://cdn.worldvectorlogo.com/logos/pandas.svg" alt="Pandas"/><span>Pandas</span></div>
+            <div class="skill-item"><img src="https://www.vectorlogo.zone/logos/numpy/numpy-ar21.svg" alt="NumPy"/><span>NumPy</span></div>
+            <div class="skill-item"><img src="https://www.matplotlib.org/_static/logo2_compressed.svg" alt="Matplotlib"/><span>Matplotlib</span></div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fa-solid fa-chart-pie"></i> BI &amp; Visualization</h3>
+          <div class="skill-items">
+            <div class="skill-item"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" alt="Power BI"/><span>Power BI</span></div>
+            <div class="skill-item"><img src="https://cdn.worldvectorlogo.com/logos/tableau-software.svg" alt="Tableau"/><span>Tableau</span></div>
+            <div class="skill-item"><img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg" alt="Excel"/><span>Excel</span></div>
+            <div class="skill-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Looker.svg/512px-Looker.svg.png" alt="Looker"/><span>Looker</span></div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fa-solid fa-gears"></i> Tools &amp; Others</h3>
+          <div class="skill-items">
+            <div class="skill-item"><img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="Git"/><span>Git</span></div>
+            <div class="skill-item"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub"/><span>GitHub</span></div>
+            <div class="skill-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png" alt="VS Code"/><span>VS Code</span></div>
+            <div class="skill-item"><img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg" alt="Jupyter"/><span>Jupyter</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <p class="section-sub">My professional journey in data and business analysis.</p>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div><h3>Data Analyst Intern</h3><p class="company">XYZ Analytics Pvt. Ltd.</p></div>
+              <span class="timeline-date">Jun 2024 – Present</span>
+            </div>
+            <p class="timeline-desc">Analyzed large datasets using SQL and Python to identify business trends. Built interactive Power BI dashboards that reduced reporting time by 40%. Collaborated with cross-functional teams to define KPIs and metrics.</p>
+            <div class="tag-list"><span class="tag">SQL</span><span class="tag">Python</span><span class="tag">Power BI</span><span class="tag">Excel</span></div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-icon"><i class="fa-solid fa-briefcase"></i></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div><h3>Business Analyst Intern</h3><p class="company">ABC Solutions</p></div>
+              <span class="timeline-date">Jan 2024 – May 2024</span>
+            </div>
+            <p class="timeline-desc">Gathered and documented business requirements from stakeholders. Performed gap analysis and created process flow diagrams. Delivered weekly reports using Excel and Tableau to senior management.</p>
+            <div class="tag-list"><span class="tag">Tableau</span><span class="tag">Excel</span><span class="tag">Requirements Gathering</span><span class="tag">Process Mapping</span></div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div><h3>Data Research Volunteer</h3><p class="company">Open Data Initiative</p></div>
+              <span class="timeline-date">Aug 2023 – Dec 2023</span>
+            </div>
+            <p class="timeline-desc">Cleaned and preprocessed public datasets using Pandas and NumPy. Wrote complex SQL queries to extract insights from relational databases. Presented findings through visualizations using Matplotlib and Seaborn.</p>
+            <div class="tag-list"><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">SQL</span><span class="tag">Matplotlib</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-sub">Real-world data problems I've solved through analysis and visualization.</p>
+      <div class="filter-btns">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="sql">SQL</button>
+        <button class="filter-btn" data-filter="python">Python</button>
+        <button class="filter-btn" data-filter="dashboard">Dashboard</button>
+      </div>
+      <div class="projects-grid" id="projectsGrid">
+        <div class="project-card" data-category="sql python dashboard">
+          <div class="project-img"><div class="project-placeholder"><i class="fa-solid fa-store"></i></div></div>
+          <div class="project-body">
+            <div class="project-tags"><span class="tag">SQL</span><span class="tag">Python</span><span class="tag">Power BI</span></div>
+            <h3>Retail Sales Performance Dashboard</h3>
+            <p>End-to-end analysis of 2 years of retail sales data. Used SQL for extraction, Python for cleaning, and Power BI for an interactive dashboard tracking revenue, churn, and product performance.</p>
+            <div class="project-links"><a href="#" class="btn-sm"><i class="fa-brands fa-github"></i> Code</a><a href="#" class="btn-sm btn-sm-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a></div>
+          </div>
+        </div>
+        <div class="project-card" data-category="python">
+          <div class="project-img"><div class="project-placeholder"><i class="fa-solid fa-users"></i></div></div>
+          <div class="project-body">
+            <div class="project-tags"><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Seaborn</span></div>
+            <h3>Customer Churn Prediction Analysis</h3>
+            <p>Analyzed telecom customer data to identify churn patterns. Built a predictive model using Python with 85% accuracy. Delivered actionable retention strategies that reduced churn by 15%.</p>
+            <div class="project-links"><a href="#" class="btn-sm"><i class="fa-brands fa-github"></i> Code</a><a href="#" class="btn-sm btn-sm-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a></div>
+          </div>
+        </div>
+        <div class="project-card" data-category="sql">
+          <div class="project-img"><div class="project-placeholder"><i class="fa-solid fa-hospital"></i></div></div>
+          <div class="project-body">
+            <div class="project-tags"><span class="tag">SQL</span><span class="tag">MySQL</span><span class="tag">Excel</span></div>
+            <h3>Healthcare Data Analysis with SQL</h3>
+            <p>Wrote 50+ complex SQL queries (CTEs, window functions, subqueries) to analyze patient admission data. Identified bottlenecks in hospital workflows and presented findings to stakeholders.</p>
+            <div class="project-links"><a href="#" class="btn-sm"><i class="fa-brands fa-github"></i> Code</a><a href="#" class="btn-sm btn-sm-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a></div>
+          </div>
+        </div>
+        <div class="project-card" data-category="dashboard">
+          <div class="project-img"><div class="project-placeholder"><i class="fa-solid fa-money-bill-trend-up"></i></div></div>
+          <div class="project-body">
+            <div class="project-tags"><span class="tag">Tableau</span><span class="tag">Excel</span><span class="tag">Dashboard</span></div>
+            <h3>Financial KPI Tracker — Tableau</h3>
+            <p>Designed a Tableau dashboard for a finance team to monitor monthly KPIs including revenue growth, expense ratios, and profit margins. Reduced manual reporting effort by 60%.</p>
+            <div class="project-links"><a href="#" class="btn-sm"><i class="fa-brands fa-github"></i> Code</a><a href="#" class="btn-sm btn-sm-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a></div>
+          </div>
+        </div>
+        <div class="project-card" data-category="python sql">
+          <div class="project-img"><div class="project-placeholder"><i class="fa-solid fa-cart-shopping"></i></div></div>
+          <div class="project-body">
+            <div class="project-tags"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Matplotlib</span></div>
+            <h3>E-Commerce Funnel Analysis</h3>
+            <p>Analyzed user journey data from an e-commerce platform to identify drop-off points in the purchase funnel. Used SQL for cohort analysis and Python for visualization, improving conversion by 22%.</p>
+            <div class="project-links"><a href="#" class="btn-sm"><i class="fa-brands fa-github"></i> Code</a><a href="#" class="btn-sm btn-sm-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a></div>
+          </div>
+        </div>
+        <div class="project-card" data-category="dashboard python">
+          <div class="project-img"><div class="project-placeholder"><i class="fa-solid fa-globe"></i></div></div>
+          <div class="project-body">
+            <div class="project-tags"><span class="tag">Python</span><span class="tag">Power BI</span><span class="tag">API</span></div>
+            <h3>Market Trend Analysis Dashboard</h3>
+            <p>Pulled live market data via APIs using Python, stored in a SQL database, and visualized trends in Power BI. Helped a small business identify the best time to launch a new product line.</p>
+            <div class="project-links"><a href="#" class="btn-sm"><i class="fa-brands fa-github"></i> Code</a><a href="#" class="btn-sm btn-sm-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section class="section section-alt" id="education">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <p class="section-sub">My educational journey has been one of continuous growth, learning, and discovering my passion for innovation.</p>
+
+      <div class="edu-list">
+
+        <!-- DTU -->
+        <div class="edu-entry">
+          <div class="edu-logo-wrap">
+            <img src="collage pic .jpeg" alt="Delhi Technological University" class="edu-logo" />
+          </div>
+          <div class="edu-details">
+            <div class="edu-top-row">
+              <div>
+                <h3 class="edu-inst">Delhi Technological University (DTU)</h3>
+                <p class="edu-degree">Bachelor of Technology — B.Tech, Electrical Engineering</p>
+                <p class="edu-period-inline">July 2024 – Present</p>
+              </div>
+            </div>
+            <p class="edu-desc">
+              I am pursuing a Bachelor's degree in Electrical Engineering at Delhi Technological University,
+              where I have worked on exciting projects in Data Analytics and Data Science.
+            </p>
+          </div>
+        </div>
+
+        <!-- Class XII -->
+        <div class="edu-entry">
+          <div class="edu-logo-wrap">
+            <img src="school pic .jpeg" alt="Mata Bhatee Devi School" class="edu-logo" />
+          </div>
+          <div class="edu-details">
+            <div class="edu-top-row">
+              <div>
+                <h3 class="edu-inst">Mata Bhatee Devi School, Najafgarh</h3>
+                <p class="edu-degree">CBSE Class XII — Science</p>
+                <p class="edu-period-inline">Apr 2022 – Mar 2023</p>
+              </div>
+            </div>
+            <p class="edu-grade-badge">Grade: 90%</p>
+            <p class="edu-desc">
+              I completed my Class 12 high school education at Mata Bhatee Devi School, Najafgarh,
+              where I studied Science (Physics, Chemistry, Maths) and English.
+            </p>
+          </div>
+        </div>
+
+        <!-- Class X -->
+        <div class="edu-entry">
+          <div class="edu-logo-wrap">
+            <img src="school pic .jpeg" alt="Mata Bhatee Devi School" class="edu-logo" />
+          </div>
+          <div class="edu-details">
+            <div class="edu-top-row">
+              <div>
+                <h3 class="edu-inst">Mata Bhatee Devi School, Najafgarh</h3>
+                <p class="edu-degree">CBSE Class X</p>
+                <p class="edu-period-inline">Apr 2020 – Mar 2021</p>
+              </div>
+            </div>
+            <p class="edu-grade-badge">Grade: 92.8%</p>
+            <p class="edu-desc">
+              I completed my Class 10 education at Mata Bhatee Devi School, Najafgarh.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-name">Shubham Rai</p>
+      <div class="footer-socials">
+        <a href="https://github.com/shubhamrai" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/shubham-rai-a269ba36a" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://twitter.com/shubhamrai" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+      <p class="footer-copy">© 2025 Shubham Rai. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
