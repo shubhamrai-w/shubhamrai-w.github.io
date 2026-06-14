@@ -193,8 +193,16 @@ type();
 
 /* ===== NAVBAR SCROLL ===== */
 const navbar = document.getElementById('navbar');
+const bgCanvas = document.getElementById('bgCanvas');
+
 window.addEventListener('scroll', () => {
   navbar.classList.toggle('scrolled', window.scrollY > 50);
+
+  // Show particles only after scrolling past the hero section
+  const hero = document.getElementById('about');
+  if (hero) {
+    bgCanvas.classList.toggle('show', hero.getBoundingClientRect().bottom < 0);
+  }
 });
 
 /* ===== HAMBURGER MENU ===== */
