@@ -5,10 +5,8 @@
   width: 100%; height: 100%;
   z-index: 0;
   pointer-events: none;
-  opacity: 0;
-  transition: opacity 1s ease;
+  opacity: 1;
 }
-#bgCanvas.show { opacity: 1; }
 
 .navbar, .hero, .section, .footer { position: relative; z-index: 1; }
 
